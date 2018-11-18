@@ -15,7 +15,6 @@ router.post('/', async (req, res, next) => {
         const result = await Student.create({
             firstName: req.body.firstName,
             lastName: req.body.lastName,
-            lastName: req.body.lastName,
             email: req.body.email,
         });
         res.status(201).send(result)
